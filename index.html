@@ -5,25 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Tareas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <div>
-        <h1>Lista de Tareas</h1>
+<body class="bg-gray-50 font-sans">
+
+    <!-- Contenedor principal -->
+    <div class="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-xl mt-12">
+
+        <!-- Título de la aplicación -->
+        <h1 class="text-4xl font-extrabold text-center text-gray-800 mb-8">
+            Lista de Tareas
+        </h1>
 
         <!-- Formulario para agregar tarea -->
-        <div>
-            <input id="taskInput" type="text" placeholder="Escribe tu tarea...">
-            <button id="addTaskBtn">
+        <div class="mb-6">
+            <input id="taskInput" type="text"
+                class="p-3 w-full border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                placeholder="Escribe tu tarea...">
+            <button id="addTaskBtn"
+                class="mt-4 w-full py-3 bg-blue-500 text-white rounded-lg font-semibold hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
                 Agregar tarea
             </button>
         </div>
 
         <!-- Lista de tareas -->
-        <ul id="taskList">
+        <ul id="taskList" class="space-y-4">
             <!-- Tareas aparecerán aquí -->
         </ul>
+
     </div>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
