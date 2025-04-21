@@ -8,23 +8,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-50 font-sans">
-
-    <!-- Contenedor principal -->
-    <div class="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-xl mt-12">
-
-        <!-- Título de la aplicación -->
-        <h1 class="text-4xl font-extrabold text-center text-gray-800 mb-8">
-            Lista de Tareas
-        </h1>
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto p-4">
+        <h1 class="text-3xl font-bold text-center mb-8">Lista de Tareas</h1>
 
         <!-- Formulario para agregar tarea -->
-        <div class="mb-6">
-            <input id="taskInput" type="text"
-                class="p-3 w-full border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                placeholder="Escribe tu tarea...">
-            <button id="addTaskBtn"
-                class="mt-4 w-full py-3 bg-blue-500 text-white rounded-lg font-semibold hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <div class="mb-4">
+            <input id="taskInput" type="text" class="p-2 w-full rounded border" placeholder="Escribe tu tarea...">
+            <button id="addTaskBtn" class="mt-2 w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-700">
                 Agregar tarea
             </button>
         </div>
